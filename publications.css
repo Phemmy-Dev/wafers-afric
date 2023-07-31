@@ -1,0 +1,81 @@
+.pub-bg {
+    width: 100%;
+    height: 40vh;
+    background-image: linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.7)), url(./img/publications2.jpg);
+    background-position: center;
+    background-size: cover;
+}
+
+.logo {
+    width: 100px;
+}
+
+.publication-box {
+    width: 90%;
+    /* background: #bebebe; */
+    /* height: 200px; */
+}
+
+.pub-pic img {
+    width: 15rem;
+    height: 8rem;
+    border-radius: 5px;
+}
+
+
+/* Hamburger Menu */
+.hamburger {
+    cursor: pointer;
+    width: 250px;
+    height: 24px;
+    transition: all 0.25s;
+    position: relative;
+    right: 0;
+  }
+  
+  .hamburger-top,
+  .hamburger-middle,
+  .hamburger-bottom {
+    position: absolute;
+    /* top: 0; */
+    /* left: 0; */
+    right: 0;
+    width: 24px;
+    height: 2px;
+    background: #000;
+    transform: rotate(0);
+    transition: all 0.5s;
+  }
+  
+  .hamburger-middle {
+    transform: translateY(7px);
+  }
+  
+  .hamburger-bottom {
+    transform: translateY(14px);
+  }
+  
+  .open {
+    transform: rotate(90deg);
+    transform: translateY(0px);
+  }
+  
+  .open .hamburger-top {
+    transform: rotate(45deg) translateY(6px) translate(6px);
+  }
+  
+  .open .hamburger-middle {
+    display: none;
+  }
+  
+  .open .hamburger-bottom {
+    transform: rotate(-45deg) translateY(6px) translate(-6px);
+  }
+
+@media screen and (max-width: 480px) {
+    .logo {
+        width: 80px;
+    }
+  }
+
+

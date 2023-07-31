@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../dist/output.css" />
+    <link rel="stylesheet" href="./trustees.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+      integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <title>WAFERs - Resources</title>
+</head>
+<body>
+    <div class="contain">
+        <!-- Nav -->
+        <nav class="nav flex justify-between p-8 text-black items-center">
+            <div class="logo"><img src="../img/logo.png" width="100px" alt=""></div>
+            <div class="nav-links hidden md:flex space-x-4">
+                <a href="../src/index.html" class="nav-link hover:text-secondaryColor transition-colors duration-300 font-semibold">Home</a>
+                <a href="../src/about.html" class="nav-link hover:text-secondaryColor transition-colors duration-300 font-semibold">About Us</a>
+                <a href="../src/jigsaw.html" class="nav-link hover:text-secondaryColor transition-colors duration-300 font-semibold">JIGSAW-Africa</a>
+                <!-- <a href="" class="nav-link hover:text-secondaryColor transition-colors duration-300 font-semibold">Faculty</a> -->
+                <a href="../src/publications.html" class="nav-link hover:text-secondaryColor transition-colors duration-300 font-semibold">Publications</a>
+                <!-- <a href="../src/trustees.html" class="nav-link hover:text-secondaryColor transition-colors duration-300 font-semibold">Resources</a> -->
+            </div>
+
+            <!-- Hamburger Menu -->
+            <button id="menu-btn" class=" block hamburger md:hidden focus:outline-none">
+                <span class="hamburger-top"></span>
+                <span class="hamburger-middle"></span>
+                <span class="hamburger-bottom"></span>
+             </button>
+
+            <!-- Mobile Menu -->
+             <div class="md:hidden">
+                  <div id="menu" class="absolute flex-col items-center text-black hidden self-end py-8 mt-10 space-y-6 font-bold bg-white sm:w-auto sm:self-center left-6 right-6 drop-shadow-md">
+                    <a href="#">Home</a>
+                    <a href="./about.html">About Us</a>
+                    <a href="./jigsaw.html">JIGSAW-Africa</a>
+                    <!-- <a href="./">Faculty</a> -->
+                    <a href="./publications.html">Publications</a>
+                    <!-- <a href="./trustees.html">Resources</a> -->
+                 </div>
+              </div>
+        </nav>
+
+       
+
+       <!-- Footer -->
+       <footer class="text-white flex justify-between items-start">
+        <div class="wafers-ftr w-2/3 pr-12">
+                <img src="../img/logo.png" alt="" width="100px">
+                <p class="text-xs mb-3 md:text-sm"> We are a non-profit organization that specializes in research, training applied health research
+                and related research. It is being administered by an international board of Advisors and
+                Trustees.</p>
+                <div class="social-icons flex space-x-2 mb-3">
+                    <a href="https://www.facebook.com/profile.php?id=100094755996364&mibextid=LQQJ4d"><i class="fa-brands fa-facebook"></i></a>
+                    <!-- <a href=""><i class="fa-brands fa-instagram"></i></a> -->
+                    <a href="mailto:jigsawafrica@gmail.com"><i class="fa-regular fa-envelope"></i></a>
+                    <a href="https://twitter.com/JIGSAWAfrica?s=20"><i class="fa-brands fa-twitter"></i></a>
+                </div>
+        </div>
+
+        <div class="getit w-2/6 bg-re-600">
+            <h4 class="font-semibold text-base mb-2 md:text-xl">Get in touch</h4>
+            <p class="text-xs">Contact us today and join our mission in advancing global health through innovative research.</p>
+            <a href="mailto:researchcathedral@outlook.com " class="text-accentColor font-semibold hover:text-secondaryColor mt-4 transition-colors duration-300">researchcathedral@outlook.com</a>
+        </div>
+    </footer>
+    </div>
+
+    <script src="../js/main.js"></script>
+</body>
+</html>

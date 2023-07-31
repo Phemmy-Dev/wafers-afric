@@ -1,0 +1,211 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;400;600;700&display=swap');
+
+
+body {
+    font-family: 'Poppins', sans-serif;
+    font-family: 'Montserrat', sans-serif;
+
+}
+
+.hero-page {
+    background-image: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url(./img/hero-img2.jpg);
+    width: 100%;
+    height: 100vh;
+    background-position: center;
+    background-size: cover;
+}
+
+section {
+    margin-top: 40px;
+    padding-inline: 40px;
+}
+
+.logo {
+    width: 100px;
+}
+
+.hero-txt {
+    height: 87vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.wafers-txt  {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: bold;
+}
+
+.wafers-para {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 300;
+    color: #DDDDDD;
+}
+
+.boxes{
+    width: 100%;
+    /* height: 50px; */
+    /* background-color: red; */
+    /* padding-inline: 20px; */
+}
+
+.box {
+    width: 17rem;
+    background-color: #EDEDED;
+    height: 350px;
+    padding-top: 10px;
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+.box img {
+    background-position: center;
+    background-size: cover;
+}
+
+.publi-box-cont {
+    /* background-color: red; */
+    width: 100%;
+}
+
+.publi-box {
+    width: 18rem;
+    background-color: #EDEDED;
+    height: 18rem;
+    padding-inline: 15px;
+}
+
+.publi-box img {
+    width: 90%;
+}
+
+footer {
+    margin-top: 50px;
+    background-color: black;
+    padding-inline: 20px;
+    padding-block: 20px;
+}
+
+.getit input {
+    margin-top: 1rem;
+    background-color: transparent;
+    outline: 1px solid white;
+    /* padding-block: 8px; */
+}
+
+.subscribe {
+    background: #000080;
+    padding-inline: 3px;
+    padding-block: 4px;
+}
+
+.social-icons i {
+    color: #0F7F8E;
+    transition: 0.5s all;
+}
+
+.social-icons i:hover{
+    color: #E7AC17;
+}
+
+
+/* ABOUT PAGE */
+
+.about-pg {
+    background-image: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url(../img/about-bg2.jpg);
+    width: 100%;
+    height: 100vh;
+    background-position: center;
+    background-size: cover;
+}
+
+/* Hamburger Menu */
+.hamburger {
+    cursor: pointer;
+    width: 250px;
+    height: 24px;
+    transition: all 0.25s;
+    position: relative;
+    right: 0;
+  }
+  
+  .hamburger-top,
+  .hamburger-middle,
+  .hamburger-bottom {
+    position: absolute;
+    /* top: 0; */
+    /* left: 0; */
+    right: 0;
+    width: 24px;
+    height: 2px;
+    background: #fff;
+    transform: rotate(0);
+    transition: all 0.5s;
+  }
+  
+  .hamburger-middle {
+    transform: translateY(7px);
+  }
+  
+  .hamburger-bottom {
+    transform: translateY(14px);
+  }
+  
+  .open {
+    transform: rotate(90deg);
+    transform: translateY(0px);
+  }
+  
+  .open .hamburger-top {
+    transform: rotate(45deg) translateY(6px) translate(6px);
+  }
+  
+  .open .hamburger-middle {
+    display: none;
+  }
+  
+  .open .hamburger-bottom {
+    transform: rotate(-45deg) translateY(6px) translate(-6px);
+  }
+  
+
+
+
+@media screen and (max-width: 480px) {
+    .logo {
+        width: 80px;
+    }
+
+    footer .getit a {
+        font-size: 10px;
+        word-wrap: break-word;
+      }
+  }
+
+
+  @media screen and (max-width: 300px) {
+    .publi-box {
+        width: 12rem;
+        background-color: #EDEDED;
+        height: 18rem;
+        padding-inline: 15px;
+    }
+
+    footer .getit a {
+        font-size: 10px;
+        word-wrap: break-word;
+      }
+
+      .box {
+        width: 15rem;
+    }
+}
+

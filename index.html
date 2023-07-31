@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./output.css">
+    <link rel="stylesheet" href="./input.css">
+    <link rel="stylesheet" href="./about.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>WAFERs Research Institute</title>
+</head>
+
+
+<body>
+    <div class="contain m-auto">
+        <main class="hero-page bg">
+            <nav class="nav flex justify-between p-5 text-white items-center">
+                <div class="logo"><img src="./img/logo.png" alt=""></div>
+                <div class="nav-links hidden md:flex space-x-4">
+                    <a href="#" class="nav-link hover:text-secondaryColor transition-colors duration-300 font-bold">Home</a>
+                    <a href="./about.html" class="nav-link hover:text-secondaryColor transition-colors duration-300 font-bold">About Us</a>
+                    <a href="./jigsaw.html" class="nav-link hover:text-secondaryColor transition-colors duration-300 font-bold">JIGSAW-Africa</a>
+                    <!-- <a href="" class="nav-link hover:text-secondaryColor transition-colors duration-300 font-bold">Faculty</a> -->
+                    <a href="./publications.html" class="nav-link hover:text-secondaryColor transition-colors duration-300 font-bold">Publications</a>
+                <!-- <a href="../src/trustees.html" class="nav-link hover:text-secondaryColor transition-colors duration-300 font-semibold">Resources</a> -->
+
+
+                
+                </div>
+
+                <!-- Hamburger Menu -->
+                <button id="menu-btn" class=" block hamburger md:hidden focus:outline-none">
+                    <span class="hamburger-top"></span>
+                    <span class="hamburger-middle"></span>
+                    <span class="hamburger-bottom"></span>
+                 </button>
+
+                <!-- Mobile Menu -->
+                 <div class="md:hidden">
+                      <div id="menu" class="absolute flex-col items-center text-black hidden self-end py-8 mt-10 space-y-6 font-bold bg-white sm:w-auto sm:self-center left-6 right-6 drop-shadow-md">
+                             <a href="#">Home</a>
+                             <a href="./about.html">About Us</a>
+                             <a href="./jigsaw.html">JIGSAW-Africa</a>
+                             <!-- <a href="./">Faculty</a> -->
+                             <a href="./publications.html">Publications</a>
+                             <!-- <a href="./trustees.html">Resources</a> -->
+                     </div>
+                  </div>
+            </nav>
+
+            <div class="hero-txt text-white">
+                <h1 class="text-2xl wafers-txt md:text-5xl">WAFERs</h1>
+                <h4 class="text-sm wafers-para text-center md:text-base">The West African Institute for Applied Health Research.</h4>
+            </div>
+        </main>
+        
+        <!-- Boxes -->
+        <section>
+            <div class="boxes flex justify-between flex-col items-center space-y-6 md:flex-row md:space-y-0">
+                <div class="box box1 flex justify-center items-center flex-col rounded-xl">
+                    <img src="./img/box-1n.jpg" alt="" class="rounded-full w-20 h-20 text-center mb-4">
+                    <h3 class="mb-2 font-semibold">Enhancing Health Outcomes through High-Quality Research</h3>
+                    <p class="text-sm">We are committed to spearheading the development, evaluation, and implementation of
+                        innovative solutions in low-resource settings with a specific focus on West Africa and similar
+                        regions.</p>
+                </div>
+
+                <div class="box box1 flex justify-center items-center flex-col rounded-xl">
+                    <img src="./img/box-2n.jpg" alt="" class="rounded-full w-20 h-20 text-center mb-4">
+                    <h3 class="mb-2 font-semibold">Develop and Promote Use of Innovations in the global South</h3>
+                    <p class="text-sm">We are dedicated to conducting high-quality research that creates a lasting impact on global
+                        health. By focusing our efforts on areas of unmet need, particularly in low- and middle-income
+                        countries</p>
+                </div>
+
+                <div class="box box1 flex justify-center items-center flex-col rounded-xl">
+                    <img src="./img/box-3n.jpg" alt="" class="rounded-full w-20 h-20 text-center mb-4">
+                    <h3 class="mb-2 font-semibold">Enhancing Health Outcomes through High-Quality Research</h3>
+                    <p class="text-sm">We are dedicated to conducting high-quality research that creates a lasting impact on global
+                        health. By focusing our efforts on areas of unmet need, particularly in low- and middle-income
+                        countries</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Publications Section -->
+        <section>
+            <h2 class="text-3xl mb-4 font-bold">Publications</h2>
+
+            <div class="publi-box-cont flex justify-between flex-col space-y-7 md:flex-row md:space-y-0">
+                <a href="./publications.html">
+                    <div class="publi-box flex justify-center iems-center flex-col rounded-md">
+                        <h1 class="mb-3 font-semibold text-xl">What is Osteoarthritis?</h1>
+                        <p class="mb-3 text-xs">Joint pain is more common amongst people in certain occupations.</p>
+                        <img src="./img/oa.jpg" alt="" class="text-center rounded-sm">
+                    </div>
+                </a>
+
+                <!-- <a href="">
+                    <div class="publi-box flex justify-center iems-center flex-col rounded-md">
+                        <h1 class="mb-3 font-semibold text-xl">Publication 2</h1>
+                        <p class="mb-3 text-xs">Lorem ipsum dolor, sit amet cctetur adipisicing elit.</p>
+                        <img src="../img/publications2.jpg" alt="" class="text-center rounded-sm">
+                    </div>
+                </a>
+
+                <a href="">
+                    <div class="publi-box flex justify-center iems-center flex-col rounded-md">
+                        <h1 class="mb-3 font-semibold text-xl">Publication 3</h1>
+                        <p class="mb-3 text-xs">Lorem ipsum dolor, sit amet ectetur adipisicing elit.</p>
+                        <img src="../img/publications2.jpg" alt="" class="text-center rounded-sm">
+                    </div>
+                </a> -->
+
+                
+
+
+            </div>
+
+            <!-- <div class="load-btn mt-5 text-right">
+                <a href="./publications.html" class="bg-accentColor text-white inline-block px-4 py-2 rounded-3xl hover:bg-secondaryColor transition-colors duration-300">Load More →</a>
+            </div> -->
+        </section> 
+
+        <!-- Footer -->
+        <footer class="text-white flex justify-between items-start">
+            <div class="wafers-ftr w-2/3 pr-12">
+                    <img src="./img/logo.png" alt="" width="100px">
+                    <p class="text-xs mb-3 md:text-sm"> We are a non-profit organization that specializes in research, training applied health research
+                    and related research. It is being administered by an international board of Advisors and
+                    Trustees.</p>
+                    <div class="social-icons flex space-x-2 mb-3">
+                        <a href="https://www.facebook.com/profile.php?id=100094755996364&mibextid=LQQJ4d"><i class="fa-brands fa-facebook"></i></a>
+                        <!-- <a href=""><i class="fa-brands fa-instagram"></i></a> -->
+                        <a href="mailto:jigsawafrica@gmail.com"><i class="fa-regular fa-envelope"></i></a>
+                        <a href="https://twitter.com/JIGSAWAfrica?s=20"><i class="fa-brands fa-twitter"></i></a>
+                    </div>
+            </div>
+
+            <div class="getit w-2/6 bg-re-600">
+                <h4 class="font-semibold text-base mb-2 md:text-xl">Get in touch</h4>
+                <p class="text-xs">Contact us today and join our mission in advancing global health through innovative research.</p>
+                <a href="mailto:researchcathedral@outlook.com " class="text-accentColor font-semibold hover:text-secondaryColor mt-4 transition-colors duration-300">researchcathedral@outlook.com</a>
+            </div>
+        </footer>
+    </div>
+
+    <script src="./js/main.js"></script>
+</body>
+</html>

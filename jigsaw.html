@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./output.css">
+    <link rel="stylesheet" href="./jigsaw.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>JIGSAW-Africa</title>
+</head>
+<body>
+    <div class="contain">
+        <nav class="nav flex justify-between p-5 text-black items-center">
+            <div class="logo"><img src="../img/logo.png" width="100px" alt=""></div>
+            <div class="nav-links hidden md:flex space-x-4">
+                <a href="./index.html" class="nav-link hover:text-secondaryColor transition-colors duration-300 font-bold">Home</a>
+                <a href="./about.html" class="nav-link hover:text-secondaryColor transition-colors duration-300 font-bold">About Us</a>
+                <a href="#" class="nav-link hover:text-secondaryColor transition-colors duration-300 font-bold">JIGSAW-Africa</a>
+                <!-- <a href="" class="nav-link hover:text-secondaryColor transition-colors duration-300 font-bold">Faculty</a> -->
+                <a href="./publications.html" class="nav-link hover:text-secondaryColor transition-colors duration-300 font-bold">Publications</a>
+                <!-- <a href="../src/trustees.html" class="nav-link hover:text-secondaryColor transition-colors duration-300 font-semibold">Resources</a> -->
+            </div>
+
+            <!-- Hamburger Menu -->
+            <button id="menu-btn" class=" block hamburger md:hidden focus:outline-none">
+                <span class="hamburger-top"></span>
+                <span class="hamburger-middle"></span>
+                <span class="hamburger-bottom"></span>
+             </button>
+
+            <!-- Mobile Menu -->
+             <div class="md:hidden">
+                  <div id="menu" class="absolute flex-col items-center text-black hidden self-end py-8 mt-10 space-y-6 font-bold bg-white sm:w-auto sm:self-center left-6 right-6 drop-shadow-md">
+                    <a href="./index.html">Home</a>
+                    <a href="./about.html">About Us</a>
+                    <a href="./jigsaw.html">JIGSAW-Africa</a>
+                    <!-- <a href="./">Faculty</a> -->
+                    <a href="./publications.html">Publications</a>
+                    <!-- <a href="./trustees.html">Resources</a> -->
+                 </div>
+              </div>
+        </nav>
+
+        <!-- Header -->
+        <header class="jigsaw-bg flex justify-center items-center">
+            <h1 class="text-white font-extrabold text-5xl">Jigsaw Africa</h1>
+        </header>
+
+        <!-- Jigsaw-Pub -->
+        <!--  
+            <div class="jig-boxes flex justify-between flex-wrap items-center space-y-7 md:space-y-8">
+                <a href="" class=" hover:-translate-y-4 transition-transform duration-300">
+                    <div class="jig-box rounded-md">
+                        <h2 class="flex justify-center items-center font-bold text-2xl p-5 bg-accentColor text-white">Title 1</h2>
+                        <p class="p-5">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nihil officia laudantium consectetur amet! Eaque, impedit aliquam. Quod minus officia reprehenderit modi itaque, accusantium molestiae, excepturi pariatur nobis ipsa saepe fugit.</p>
+                    </div>
+                </a>
+
+                <a href="" class="hover:-translate-y-4 transition-transform duration-300">
+                    <div class="jig-box rounded-md">
+                        <h2 class="flex justify-center items-center font-bold text-2xl p-5 bg-accentColor text-white">Title 2</h2>
+                        <p class="p-5">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nihil officia laudantium consectetur amet! Eaque, impedit aliquam. Quod minus officia reprehenderit modi itaque, accusantium molestiae, excepturi pariatur nobis ipsa saepe fugit.</p>
+                    </div>
+                </a>
+
+                <a href="" class="hover:-translate-y-4 transition-transform duration-300">
+                    <div class="jig-box rounded-md">
+                        <h2 class="flex justify-center items-center font-bold text-2xl p-5 bg-accentColor text-white">Title 3</h2>
+                        <p class="p-5">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nihil officia laudantium consectetur amet! Eaque, impedit aliquam. Quod minus officia reprehenderit modi itaque, accusantium molestiae, excepturi pariatur nobis ipsa saepe fugit.</p>
+                    </div>
+                </a>
+
+                <a href="" class="hover:-translate-y-4 transition-transform duration-300">
+                    <div class="jig-box rounded-md">
+                        <h2 class="flex justify-center items-center font-bold text-2xl p-5 bg-accentColor text-white">Title 4</h2>
+                        <p class="p-5">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nihil officia laudantium consectetur amet! Eaque, impedit aliquam. Quod minus officia reprehenderit modi itaque, accusantium molestiae, excepturi pariatur nobis ipsa saepe fugit.</p>
+                    </div>
+                </a>
+
+                <a href="" class="hover:-translate-y-4 transition-transform duration-300">
+                    <div class="jig-box rounded-md">
+                        <h2 class="flex justify-center items-center font-bold text-2xl p-5 bg-accentColor text-white">Title 5</h2>
+                        <p class="p-5">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nihil officia laudantium consectetur amet! Eaque, impedit aliquam. Quod minus officia reprehenderit modi itaque, accusantium molestiae, excepturi pariatur nobis ipsa saepe fugit.</p>
+                    </div>
+                </a>
+
+                <a href="" class="hover:-translate-y-4 transition-transform duration-300">
+                    <div class="jig-box rounded-md">
+                        <h2 class="flex justify-center items-center font-bold text-2xl p-5 bg-accentColor text-white">Title 6</h2>
+                        <p class="p-5">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nihil officia laudantium consectetur amet! Eaque, impedit aliquam. Quod minus officia reprehenderit modi itaque, accusantium molestiae, excepturi pariatur nobis ipsa saepe fugit.</p>
+                    </div>
+                </a>
+            </div>
+        </section> -->
+
+
+        <section class="jig-saw">
+            <p class="w-11/12">JIGSAW-Africa is a support team that adresses the unmet needs of adult with OA in west-african countries through the systematic guidelines for the best care and mamagement of osteoarthritis.</p>
+
+            <h2 class="text-accentColor mt-6 text-4xl font-bold">ORIGINS</h2>
+            <p class="w-11/12">Across the world, osteoarthritis is usually managed in primary care, and delivery of quality osteoarthritis care is highly variable. Self-management of long-term illnesses and support for self-management are emphasised in clinical guidelines, but patients say they need help from primary care to achieve self-management. Using research by Keele University and methods piloted in the UK, JIGSAW-A implements a model of surpported self-management for osteoarthritis - joint pain that typically affects those 45 and older and limits their everyday activities.</p>
+
+            <h2 class="text-accentColor mt-6 text-4xl font-bold">TEAMS</h2>
+
+            <p class="w-11/12">JIGSAW-A works through an international comunity of practice, bringing together academics, primary-care health professionals, industry partners and citizens in shaping local solutions to implementation challenges. The team is founded on academic leadership, dedicated projects management, a commited network of clinical champions, and patients champions with lived experience of osteoarthritis.</p>
+
+            <h2 class="text-accentColor mt-6 text-4xl font-bold">THE PROJECT</h2>
+
+            <p class="w-11/12">JIGSAW-A helps the systematic implementation of international guidelines and quality standards for osteoarthritis across West-African countries. The goal is to monitor and ensure consistent care for osteoarthritis, the most common chronic joint pain condition, and to help patients understand and self-manage their ailment.</p>
+
+            
+
+            <div class=" mx-auto">
+                <h2 class="text-accentColor mt-6 text-4xl font-bold">WHY IT'S A WAFERs PROJECT?</h2>
+                <p class="w-11/12">This project of empowering patients is so important for WAFERs to do. It's also a way to:</p>
+                <ul class="list-disc space-y-2 pl-8">
+                    <li class="text-base">"Bring Care Home" because it enebles patients to manage their own care with the support from our healthcare professionals.</li>
+                    <li class="text-base">"Transforming Healthcare" because it improves management of chronic conditions, a challenging Healthcare problem.</li>
+                </ul>
+            </div>
+
+        </section>
+        <!-- Footer -->
+        <footer class="text-white flex justify-between items-start">
+            <div class="wafers-ftr w-2/3 pr-12">
+                    <img src="./img/logo.png" alt="" width="100px">
+                    <p class="text-xs mb-3 md:text-sm"> We are a non-profit organization that specializes in research, training applied health research
+                    and related research. It is being administered by an international board of Advisors and
+                    Trustees.</p>
+                    <div class="social-icons flex space-x-2 mb-3">
+                        <a href="https://www.facebook.com/profile.php?id=100094755996364&mibextid=LQQJ4d"><i class="fa-brands fa-facebook"></i></a>
+                        <!-- <a href=""><i class="fa-brands fa-instagram"></i></a> -->
+                        <a href="mailto:jigsawafrica@gmail.com"><i class="fa-regular fa-envelope"></i></a>
+                        <a href="https://twitter.com/JIGSAWAfrica?s=20"><i class="fa-brands fa-twitter"></i></a>
+                    </div>
+            </div>
+
+            <div class="getit w-2/6 bg-re-600">
+                <h4 class="font-semibold text-base mb-2 md:text-xl">Get in touch</h4>
+                <p class="text-xs">Contact us today and join our mission in advancing global health through innovative research.</p>
+                <a href="mailto:researchcathedral@outlook.com " class="text-accentColor font-semibold hover:text-secondaryColor mt-4 transition-colors duration-300">researchcathedral@outlook.com</a>
+            </div>
+        </footer>
+    </div>
+
+    <script src="../js/main.js"></script>
+</body>
+</html>

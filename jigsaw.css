@@ -1,0 +1,89 @@
+.jigsaw-bg {
+    width: 100%;
+    height: 40vh;
+    background-image: linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.7)), url(./img/jigsaw-bg.jpg);
+    background-position: center;
+    background-size: cover;
+}
+
+.logo {
+    width: 100px;
+}
+
+.jig-box {
+    min-width: 200px;
+    max-width: 280px;
+    height: 320px;
+    /* background: #000; */
+    /* border-radius: 35px; */
+}
+
+.jig-box h2 {
+    height: 30%;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+}
+
+.jig-box p {
+    height: 70%;
+    background: #DDDDDD;
+}
+
+
+
+
+/* Hamburger Menu */
+.hamburger {
+    cursor: pointer;
+    width: 250px;
+    height: 24px;
+    transition: all 0.25s;
+    position: relative;
+    right: 0;
+  }
+  
+  .hamburger-top,
+  .hamburger-middle,
+  .hamburger-bottom {
+    position: absolute;
+    /* top: 0; */
+    /* left: 0; */
+    right: 0;
+    width: 24px;
+    height: 2px;
+    background: #000;
+    transform: rotate(0);
+    transition: all 0.5s;
+  }
+  
+  .hamburger-middle {
+    transform: translateY(7px);
+  }
+  
+  .hamburger-bottom {
+    transform: translateY(14px);
+  }
+  
+  .open {
+    transform: rotate(90deg);
+    transform: translateY(0px);
+  }
+  
+  .open .hamburger-top {
+    transform: rotate(45deg) translateY(6px) translate(6px);
+  }
+  
+  .open .hamburger-middle {
+    display: none;
+  }
+  
+  .open .hamburger-bottom {
+    transform: rotate(-45deg) translateY(6px) translate(-6px);
+  }
+
+
+@media screen and (max-width: 480px) {
+    .logo {
+        width: 80px;
+    }
+  }
